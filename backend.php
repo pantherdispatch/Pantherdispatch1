@@ -178,8 +178,6 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])){
 
     
     
-}else{
-    echo "not submit";
 }
 
 ?>
