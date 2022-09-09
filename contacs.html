@@ -218,33 +218,33 @@
         </div><!-- /.row -->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
-            <form>
+            <form action="./assets/contact-mailer.php" method="post">
               <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-6">
-                  <div class="form-group"><input type="text" class="form-control" placeholder="Name"></div>
+                  <div class="form-group"><input name="name" type="text" class="form-control" placeholder="Name"></div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
-                  <div class="form-group"><input type="email" class="form-control" placeholder="Email"></div>
+                  <div class="form-group"><input name="email" type="email" class="form-control" placeholder="Email"></div>
                 </div><!-- /.col-lg-6 -->
               </div><!-- /.row -->
               <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-6">
-                  <div class="form-group"><input type="text" class="form-control" placeholder="Phone"></div>
+                  <div class="form-group"><input name="phone" type="number" class="form-control" placeholder="Phone"></div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
-                  <div class="form-group"><input type="text" class="form-control" placeholder="Company"></div>
+                  <div class="form-group"><input name="company" type="text" class="form-control" placeholder="Company"></div>
                 </div><!-- /.col-lg-6 -->
               </div><!-- /.row -->
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <div class="form-group">
-                    <textarea class="form-control" placeholder="Request Details"></textarea>
+                    <textarea name="message" type="text" class="form-control" placeholder="Request Details"></textarea>
                   </div>
                 </div><!-- /.col-lg-12 -->
               </div><!-- /.row -->
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-                  <button type="submit" class="btn btn__secondary btn__hover3 btn__block">Submit Request</button>
+                  <button name="submit" type="submit" class="btn btn__secondary btn__hover3 btn__block">Submit Request</button>
                 </div><!-- /.col-lg-12 -->
               </div><!-- /.row -->
             </form>

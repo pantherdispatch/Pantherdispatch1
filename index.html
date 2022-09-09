@@ -456,6 +456,7 @@
                 <a class="nav__link active" data-toggle="tab" href="#quote">Request A Quote</a>
                 <a class="nav__link" data-toggle="tab" href="#track">Track & Trace</a>
               </nav>
+              <form action="./assets/contact-mailer.php" method="post">
               <div class="tab-content">
                 <div class="tab-pane fade show active" id="quote">
                   <div class="request-quote-panel">
@@ -466,17 +467,17 @@
                         </div><!-- /.col-lg-12 -->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                           <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input name="name" type="name" class="form-control" placeholder="Name">
                           </div>
                         </div><!-- /.col-lg-6 -->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                           <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input name="email" type="email" class="form-control" placeholder="Email">
                           </div>
                         </div><!-- /.col-lg-6 -->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                           <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Phone">
+                            <input name="phone" type="phone" class="form-control" placeholder="Phone">
                           </div>
                         </div><!-- /.col-lg-6 -->
                         <div class="col-sm-12 col-md-12 col-lg-12">
@@ -484,76 +485,76 @@
                         </div><!-- /.col-lg-12 -->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                           <div class="form-group form-group-select">
-                            <select class="form-control">
-                              <option>Freight Type</option>
-                              <option>Freight Type 1</option>
-                              <option>Freight Type 2</option>
+                            <select name="Freight" class="form-control">
+                              <option value="Freight Type">Freight Type</option>
+                              <option value="Freight Type 1">Freight Type 1</option>
+                              <option value="Freight Type 2">Freight Type 2</option>
                             </select>
                           </div>
                         </div><!-- /.col-lg-6 -->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                           <div class="form-group">
-                            <input type="email" class="form-control" placeholder="City of Departure">
+                            <input name="city-departure" type="email" class="form-control" placeholder="City of Departure">
                           </div>
                         </div><!-- /.col-lg-6 -->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                           <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Delivery City">
+                            <input name="delivery-city" type="text" class="form-control" placeholder="Delivery City">
                           </div>
                         </div><!-- /.col-lg-6 -->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                           <div class="form-group form-group-select">
-                            <select class="form-control">
-                              <option>Incoterms</option>
-                              <option>Incoterms 1</option>
-                              <option>Incoterms 2</option>
+                            <select name="Incoterms" class="form-control">
+                              <option value="Incoterms">Incoterms</option>
+                              <option value="Incoterms 1">Incoterms 1</option>
+                              <option value="Incoterms 2">Incoterms 2</option>
                             </select>
                           </div>
                         </div><!-- /.col-lg-6 -->
                         <div class="col-sm-6 col-md-4 col-lg-4 d-flex">
                           <div class="form-group mr-20">
-                            <input type="email" class="form-control" placeholder="Weight">
+                            <input name="weight" type="email" class="form-control" placeholder="Weight">
                           </div>
                           <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Height">
+                            <input name="height" type="email" class="form-control" placeholder="Height">
                           </div>
                         </div><!-- /.col-lg-3 -->
                         <div class="col-sm-6 col-md-4 col-lg-4  d-flex">
                           <div class="form-group mr-20">
-                            <input type="email" class="form-control" placeholder="Width">
+                            <input name="width" type="email" class="form-control" placeholder="Width">
                           </div>
                           <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Length">
+                            <input name="length" type="email" class="form-control" placeholder="Length">
                           </div>
                         </div><!-- /.col-lg-4 -->
                         <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap">
                           <div class="form-group input-radio">
-                            <label class="label-radio">Fragile
-                              <input type="radio" name="radioGroup2" checked="">
+                            <label  class="label-radio">Fragile
+                              <input name="radio-home" value="Fragile" type="radio" name="radioGroup2" checked="">
                               <span class="radio-indicator"></span>
                             </label>
                           </div>
                           <div class="form-group input-radio">
                             <label class="label-radio">Express Delivery
-                              <input type="radio" name="radioGroup2">
+                              <input name="radio-home" value="Express Delivery" type="radio" name="radioGroup2">
                               <span class="radio-indicator"></span>
                             </label>
                           </div>
                           <div class="form-group input-radio">
                             <label class="label-radio">Insurance
-                              <input type="radio" name="radioGroup2">
+                              <input name="radio-home" value="Insurance" type="radio" name="radioGroup2">
                               <span class="radio-indicator"></span>
                             </label>
                           </div>
                           <div class="form-group input-radio">
                             <label class="label-radio">Packaging
-                              <input type="radio" name="radioGroup2">
+                              <input name="radio-home" value="Packaging" type="radio" name="radioGroup2">
                               <span class="radio-indicator"></span>
                             </label>
                           </div>
                         </div><!-- /.col-lg-12 -->
                         <div class="col-sm-12 col-md-12 col-lg-12">
-                          <button class="btn btn__secondary btn__block">Request A Quote</button>
+                          <button name="submit" class="btn btn__secondary btn__block">Request A Quote</button>
                         </div><!-- /.col-lg-12 -->
                       </div>
                     </div><!-- /.request__form-body -->
@@ -642,6 +643,7 @@
           </div><!-- /.col-lg-12 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
+    </form>
     </section><!-- /.Request Quote Tabs -->
 
     <!-- ========================= 
@@ -1102,12 +1104,12 @@
               </div><!-- /.footer-newsletter-text -->
             </div><!-- /.col-xl-3-->
             <div class="col-sm-12 col-md-12 col-lg-9 col-xl-7">
-              <form class="footer__newsletter-form d-flex flex-wrap">
+              <form action="./assets/contact-mailer.php" method="post" class="footer__newsletter-form d-flex flex-wrap">
                 <div class="form-group d-flex flex-1 mb-20 mr-1">
-                  <input type="text" class="form-control" placeholder="Your Name">
+                  <input name="name" type="text" class="form-control" placeholder="Your Name">
                   <input type="email" class="form-control" placeholder="Your Email Address">
                 </div>
-                <button class="btn btn__primary btn__hover3 mb-20">Submit Now!</button>
+                <button name="submit" class="btn btn__primary btn__hover3 mb-20">Submit Now!</button>
               </form>
             </div><!-- /.col-xl-7 -->
             <div class="col-sm-12 col-md-12 col-lg-3 col-xl-2">

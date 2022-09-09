@@ -238,7 +238,7 @@
             </aside>
           </div> -->
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <form class="request-quote-form">
+            <form action="./assets/contact-mailer.php" method="post" class="request-quote-form">
               <div class="row">
                 <!-- <div class="col-sm-12 col-md-12 col-lg-12">
                   <div class="alert alert-primary text-center mb-45">
@@ -255,22 +255,22 @@
                 </div><!-- /.col-lg-12 -->
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Company">
+                    <input name="company" type="text" class="form-control" placeholder="Company">
                   </div>
                 </div><!-- /.col-lg-12 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input name="name" type="text" class="form-control" placeholder="Name">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input name="email" type="email" class="form-control" placeholder="Email">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="tel" class="form-control" placeholder="Phone">
+                    <input name="phone" type="tel" class="form-control" placeholder="Phone">
                   </div>
                 </div><!-- /.col-lg-4 -->
               </div><!-- /.row -->
@@ -281,34 +281,34 @@
                 </div><!-- /.col-lg-12 -->
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Street">
+                    <input name="street" type="text" class="form-control" placeholder="Street">
                   </div>
                 </div><!-- /.col-lg-12 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Country">
+                    <input name="country" type="text" class="form-control" placeholder="Country">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="City">
+                    <input name="city" type="text" class="form-control" placeholder="City">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Zip">
+                    <input name="zip" type="text" class="form-control" placeholder="Zip">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap">
                   <div class="form-group input-radio mr-30">
                     <label class="label-radio">Lift Gate at Pickup Point
-                      <input type="radio" name="radioGroup1" checked>
+                      <input name="radio-request" value="pickup" type="radio" name="radioGroup1" checked>
                       <span class="radio-indicator"></span>
                     </label>
                   </div>
                   <div class="form-group input-radio">
                     <label class="label-radio">Limited Access Pick Up
-                      <input type="radio" name="radioGroup1">
+                      <input name="radio-request" value="limit-pick" type="radio" name="radioGroup1">
                       <span class="radio-indicator"></span>
                     </label>
                   </div>
@@ -321,46 +321,46 @@
                 </div><!-- /.col-lg-12 -->
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Street">
+                    <input name="street" type="text" class="form-control" placeholder="Street">
                   </div>
                 </div><!-- /.col-lg-12 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Country">
+                    <input name="country" type="text" class="form-control" placeholder="Country">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="City">
+                    <input name="city" type="text" class="form-control" placeholder="City">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Zip">
+                    <input name="zip" type="text" class="form-control" placeholder="Zip">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap">
                   <div class="form-group input-radio mr-30">
                     <label class="label-radio">Call before Delivery
-                      <input type="radio" name="radioGroup2" checked>
+                      <input name="radio-request" value="call-delivery" type="radio" name="radioGroup2" checked>
                       <span class="radio-indicator"></span>
                     </label>
                   </div>
                   <div class="form-group input-radio mr-30">
                     <label class="label-radio">Lift Gate at Pickup Point
-                      <input type="radio" name="radioGroup2">
+                      <input name="radio-request" value="lift-gate" type="radio" name="radioGroup2">
                       <span class="radio-indicator"></span>
                     </label>
                   </div>
                   <div class="form-group input-radio mr-30">
                     <label class="label-radio">Limited Access Pick Up
-                      <input type="radio" name="radioGroup2">
+                      <input name="radio-request" value="limit-access" type="radio" name="radioGroup2">
                       <span class="radio-indicator"></span>
                     </label>
                   </div>
                   <div class="form-group input-radio">
                     <label class="label-radio">Hazmat
-                      <input type="radio" name="radioGroup2">
+                      <input name="radio-request" value="hazmat" type="radio" name="radioGroup2">
                       <span class="radio-indicator"></span>
                     </label>
                   </div>
@@ -373,39 +373,39 @@
                 </div><!-- /.col-lg-12 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group form-group-select">
-                    <select class="form-control">
-                      <option>Packaging</option>
-                      <option>Packaging 1</option>
-                      <option>Packaging 2</option>
+                    <select name="package" class="form-control">
+                      <option value="Packaging">Packaging</option>
+                      <option value="Packaging 1">Packaging 1</option>
+                      <option value="Packaging 2">Packaging 2</option>
                     </select>
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Total Weight, lbs">
+                    <input name="weight" type="text" class="form-control" placeholder="Total Weight, lbs">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="QTY">
+                    <input name="qty" type="text" class="form-control" placeholder="QTY">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Length">
+                    <input name="length" type="text" class="form-control" placeholder="Length">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Width">
+                    <input name="width" type="text" class="form-control" placeholder="Width">
                   </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Height">
+                    <input name="height" type="text" class="form-control" placeholder="Height">
                   </div>
                 </div><!-- /.col-lg-4 -->
-                <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap flex-wrap">
+                <!-- <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap flex-wrap">
                   <div class="form-group input-radio mr-30">
                     <label class="label-radio">Stackable
                       <input type="radio" name="radioGroup3" checked>
@@ -418,11 +418,11 @@
                       <span class="radio-indicator"></span>
                     </label>
                   </div>
-                </div><!-- /.col-lg-12 -->
+                </div> -->
               </div><!-- /.row -->
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                  <button type="submit" class="btn btn__secondary btn__block">Request A Quote</button>
+                  <button name="submit" type="submit" class="btn btn__secondary btn__block">Request A Quote</button>
                 </div><!-- /.col-lg-12 -->
               </div><!-- /.row -->
             </form>
@@ -512,10 +512,10 @@
             <div class="col-sm-12 col-md-12 col-lg-9 col-xl-7">
               <form class="footer__newsletter-form d-flex flex-wrap">
                 <div class="form-group d-flex flex-1 mb-20 mr-1">
-                  <input type="text" class="form-control" placeholder="Your Name">
+                  <input type="name" class="form-control" placeholder="Your Name">
                   <input type="email" class="form-control" placeholder="Your Email Address">
                 </div>
-                <button class="btn btn__primary btn__hover3 mb-20">Submit Now!</button>
+                <button name="submit"  class="btn btn__primary btn__hover3 mb-20">Submit Now!</button>
               </form>
             </div><!-- /.col-xl-7 -->
             <div class="col-sm-12 col-md-12 col-lg-3 col-xl-2">
