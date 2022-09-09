@@ -10,23 +10,23 @@ use PHPMailer\PHPMailer\Exception;
 if(isset($_POST['submit']) && !empty($_POST['submit'])){
     $mail = new PHPMailer();
     $AllRows = array();
-  	$targetDir = "uploads";
-    $Link = '';
-    if(is_array($_FILES)) {
-        if(is_uploaded_file($_FILES['fileToUpload']['tmp_name']))
-        {
-            $AllowedExtentions = array('gif', 'png', 'jpg', 'doc', 'docx','odt','pdf','xls','xlsx','ppt','pptx','txt');
-            $filename = $_FILES['fileToUpload']['name'];
-            $ext = pathinfo($filename, PATHINFO_EXTENSION);
-            if (in_array($ext, $AllowedExtentions)) {
-                if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'],"$targetDir/".$_FILES['fileToUpload']['name'])) {
+  	// $targetDir = "uploads";
+    // $Link = '';
+    // if(is_array($_FILES)) {
+    //     if(is_uploaded_file($_FILES['fileToUpload']['tmp_name']))
+    //     {
+    //         $AllowedExtentions = array('gif', 'png', 'jpg', 'doc', 'docx','odt','pdf','xls','xlsx','ppt','pptx','txt');
+    //         $filename = $_FILES['fileToUpload']['name'];
+    //         $ext = pathinfo($filename, PATHINFO_EXTENSION);
+    //         if (in_array($ext, $AllowedExtentions)) {
+    //             if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'],"$targetDir/".$_FILES['fileToUpload']['name'])) {
 
-                    $Link = "https://creationsquare.com/websitebrief/$targetDir/".$_FILES['fileToUpload']['name'];
-                }
-            }
+    //                 $Link = "https://creationsquare.com/websitebrief/$targetDir/".$_FILES['fileToUpload']['name'];
+    //             }
+    //         }
             
-        }
-    }
+    //     }
+    // }
     foreach($_POST as $Index=>$Value){
         if($Index != 'submit'){
             if(is_array($Value)){
