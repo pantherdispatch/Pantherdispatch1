@@ -2371,7 +2371,7 @@ textarea.form-control {
 }
 
 .navbar .navbar-brand img {
-  width: 80px;
+  width: 75px;
   max-height: 100px;
 }
 
@@ -3585,7 +3585,7 @@ textarea.form-control {
 /* Extra Small Devices */
 @media only screen and (min-width: 320px) and (max-width: 575px) {
   .navbar .navbar-brand img {
-    width: 80px;
+    width: 75px;
     max-width: 100px;
   }
 
