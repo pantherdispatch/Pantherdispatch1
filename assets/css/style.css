@@ -2698,7 +2698,7 @@ textarea.form-control {
 /* navbar-transparent */
 .header-transparent .navbar {
   border-bottom: none;
-  background-color: transparent;
+  background-color: black;
 }
 
 .header-transparent .navbar .navbar-toggler .menu-lines:before,
@@ -2759,7 +2759,7 @@ textarea.form-control {
   width: 100%;
   z-index: 1040;
   border-bottom: 0 !important;
-  background-color: #ffffff !important;
+  background-color: #000 !important;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
   -webkit-animation: translateHeader 0.8s;
   -moz-animation: translateHeader 0.8s;
@@ -2778,7 +2778,7 @@ textarea.form-control {
 }
 
 .fixed-navbar .nav__item .nav__item-link {
-  color: #333333;
+  color: #fff;
 }
 
 .fixed-navbar .logo-light {
@@ -3821,6 +3821,7 @@ textarea.form-control {
 }
 
 .footer-top {
+  color: #000;
   padding-top: 100px;
   padding-bottom: 67px;
 }
@@ -3838,6 +3839,7 @@ textarea.form-control {
 }
 
 .footer__widget-about p {
+  color: #fff;
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 15px;
@@ -3860,7 +3862,7 @@ textarea.form-control {
 .footer__copyright-links li a {
   display: block;
   position: relative;
-  color: #9b9b9b;
+  color: #fff;
   font-size: 14px;
   line-height: 33px;
 }
@@ -3888,6 +3890,7 @@ textarea.form-control {
 }
 
 .footer-bottom {
+  background-color: #000;
   padding: 28px 0;
   border-top: 1px solid #eaeaea;
   font-size: 13px;
