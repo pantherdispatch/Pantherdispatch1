@@ -209,7 +209,19 @@ hr {
 .border-bottom {
   border-bottom: 1px solid #eaeaea !important;
 }
-
+.bg-black {
+  background: #181a1f;
+}
+.opacity-4 {
+  opacity: .4;
+}
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .flex-1 {
   flex: 1;
 }
