@@ -5431,6 +5431,22 @@ textarea.form-control {
   width: 100%;
   height: 1000px;
 }
+.projects-bg-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 1060px;
+}
+.projects-bg-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 1060px;
+}
 /* projects-carousel */
 .projects-carousel .project-item {
   margin-bottom: 0;
