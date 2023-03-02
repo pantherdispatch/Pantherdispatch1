@@ -3566,6 +3566,9 @@ textarea.form-control {
     margin-top: -2px;
   }
 }
+.footer__widget-nav {
+  padding-top: 13%;
+}
 
 /* Mobile Phones and tablets */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -3812,6 +3815,16 @@ textarea.form-control {
     margin-bottom: 20px;
   }
 }
+.price-sec p{
+  width: 70%;
+  margin: auto;
+}
+.bg-blue{
+  background-color: #121c45;
+}
+.new{
+  padding: 10px;
+}
 
 /*-------------------------
     Footer
@@ -3821,7 +3834,7 @@ textarea.form-control {
 }
 
 .footer-top {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 67px;
 }
 .footer__widget-content img{
