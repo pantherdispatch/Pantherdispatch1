@@ -1335,6 +1335,7 @@ h6 {
     page title 
 -------------------------*/
 .header-transparent+.page-title {
+  background-color: #121c45;
   margin-top: -100px;
 }
 
@@ -1406,7 +1407,7 @@ h6 {
 }
 
 .page-title-layout4 {
-  padding: 248px 0 115px;
+  padding: 140px 0 115px;
 }
 
 .page-title-layout4 .pagetitle__heading {

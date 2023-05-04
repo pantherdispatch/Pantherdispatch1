@@ -53,10 +53,22 @@ input, button, select, textarea {
 .timetable dd{
 	color:#fff;
 }
+.text-black{
+	color: #000!important;
+}
 #wrapper{
 	width:100%;
 	margin:0;	
 	padding:0;
+}
+.page-title-layout4 {
+    padding: 140px 0 115px;
+}
+.page-title-11 {
+    padding: 130px 0 120px;
+}
+.header-transparent+.page-title-11 {
+    margin-top: -100px;
 }
 ul.withArrow{
 	
@@ -1391,9 +1403,6 @@ a.scrollup i:hover {
 	text-decoration:none;
 }
 
-
-
- 
 .absolute{
 	position:absolute;
 }
